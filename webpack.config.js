@@ -3,7 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/script.js',
+  // main.js is the standard bundle; script.js keeps the reference in index.html working
+  entry: {
+    main: './src/script.js',
+    script: './src/script.js',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -12,7 +16,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'script.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     libraryTarget: 'window',
