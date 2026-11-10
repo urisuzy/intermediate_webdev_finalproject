@@ -1,3 +1,6 @@
+// Let Webpack emit style.css into dist (skipped when running in Node/Jasmine)
+if (typeof window !== 'undefined' && typeof require !== 'undefined') require('./style.css');
+
 // Business logic: simple interest = (P x R x T) / 100
 const calculateSimpleInterest = (principal, rate, time) => {
   return (principal * rate * time) / 100;
