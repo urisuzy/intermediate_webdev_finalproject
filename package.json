@@ -1,0 +1,27 @@
+{
+  "name": "intermediate_webdev_finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibm-developer-skills-network/intermediate_webdev_finalproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibm-developer-skills-network/intermediate_webdev_finalproject/issues"
+  },
+  "homepage": "https://github.com/ibm-developer-skills-network/intermediate_webdev_finalproject#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.8",
+    "jasmine": "^7.0.0",
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.3.1"
+  }
+}
